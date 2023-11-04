@@ -1,0 +1,107 @@
+.slider_div {
+    margin-top: 10vh;
+    padding-left: 5%;
+    height: 25vh;
+    margin-bottom: 30vh;
+}
+
+.small_slider_div {
+    margin-top: 10vh;
+    padding-left: 5%;
+    height: 25vh;
+    margin-bottom: 20vh;
+}
+
+.movie_genre_title>p {
+    font-size: larger;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.movie_slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1vw;
+}
+
+.scroll_movies {
+    animation: scrollAnimation 10s linear;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.movie_slider::-webkit-scrollbar {
+    display: none;
+}
+
+.movie_poster {
+    height: 35vh;
+    transition: all .2s ease-in-out;
+}
+
+.small_movie_poster {
+    height: 25vh;
+    transition: all .2s ease-in-out;
+}
+
+.movie_poster:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.small_movie_poster:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* modal  */
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+    /* background-color: #111; */
+    margin: 5% auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(219, 218, 218);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.video {
+    width: 170vh;
+}

@@ -1,0 +1,16 @@
+.header_main_div{
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 5%;
+}
+
+.header_div{
+    width: 50%;
+    color: white;
+}
+
+.header_div > p {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: 400;
+}
